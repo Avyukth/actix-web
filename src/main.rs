@@ -12,7 +12,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .service(add)
             .service(sub)
-            // .service(mul)
+            .service(mul)
     })
     .bind("127.0.0.1:8080")
     .unwrap()
